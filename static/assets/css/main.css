@@ -2200,3 +2200,15 @@ input, select, textarea {
 			}
 
 		}
+
+		.education {
+		    padding-top: 20px;
+		}
+
+		#work_div_ {
+		    float: right;
+		}
+
+		.skills {
+		    margin: 10px 0px;
+		}
