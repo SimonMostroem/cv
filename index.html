@@ -12,9 +12,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body class="is-preload">
+    <!-- <div class="scroll-watcher"></div> -->
     <!-- Header -->
     <section id="header">
       <header>
@@ -22,43 +27,68 @@
           ><img src="static/images/2022_cropped.png" alt=""
         /></span>
         <h1 id="logo"><a href="#">Simon Mostrøm</a></h1>
+
         <p>
-          Cand.IT<br />
-          Salesforce developer
+          Salesforce Developer<br />
+          Frederiksberg C
         </p>
+        <p>
+          <a href="mailto:simon.mostroem@gmail.com" target="_blank"
+            >simon.mostroem@gmail.com</a
+          ><br />
+          +45 22892879
+        </p>
+        <div>
+          <a
+            href="static/CV_SimonMostroemNielsen.pdf"
+            class="button primary"
+            download
+          >
+            <i class="fa fa-download"></i> Download CV
+          </a>
+        </div>
       </header>
       <nav id="nav">
         <ul>
           <li><a href="#one" class="active">About</a></li>
-          <li><a href="#two">Things I Can Do</a></li>
-          <li><a href="#three">A Few Accomplishments</a></li>
-          <li><a href="#four">Contact</a></li>
+          <li><a href="#two">Skills & Languages</a></li>
+          <li><a href="#five">Education & Experience</a></li>
+          <!-- <li><a href="#three">A Few Accomplishments</a></li> -->
+          <li><a href="#four">What Else Do I Do</a></li>
+          <!-- <li><a href="#four">Contact</a></li> -->
         </ul>
       </nav>
       <footer>
         <ul class="icons">
           <li>
-            <a href="#" class="icon brands fa-twitter"
-              ><span class="label">Twitter</span></a
+            <a
+              href="https://www.salesforce.com/trailblazer/simonmostroem"
+              class="icon brands fa-salesforce"
+              target="_blank"
+              ><span class="label">Trailhead</span></a
             >
           </li>
           <li>
-            <a href="#" class="icon brands fa-facebook-f"
-              ><span class="label">Facebook</span></a
+            <a
+              href="https://linkedin.com/in/simonmostroem"
+              class="icon brands fa-linkedin"
+              target="_blank"
+              ><span class="label">LinkedIn</span></a
             >
           </li>
           <li>
-            <a href="#" class="icon brands fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-github"
+            <a
+              href="https://github.com/SimonMostroem"
+              class="icon brands fa-github"
+              target="_blank"
               ><span class="label">Github</span></a
             >
           </li>
           <li>
-            <a href="#" class="icon solid fa-envelope"
+            <a
+              href="mailto:simon.mostroem@gmail.com"
+              class="icon solid fa-envelope"
+              target="_blank"
               ><span class="label">Email</span></a
             >
           </li>
@@ -71,25 +101,27 @@
       <!-- Main -->
       <div id="main">
         <!-- One -->
-        <section id="one">
+        <section>
           <div class="image main" data-position="center">
-            <img src="static/images/banner.jpg" alt="" />
+            <!-- <img src="static/images/banner.jpg" alt="" /> -->
+            <img src="static/images/hero.jpg" alt="" />
           </div>
-          <div class="container">
+          <div id="one" class="container">
             <header class="major">
-              <h2>Read Only</h2>
-              <p>
-                Just an incredibly simple responsive site<br />
-                template freebie by <a href="http://html5up.net">HTML5 UP</a>.
-              </p>
+              <h2>About</h2>
             </header>
+            <h3>My background</h3>
             <p>
-              Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus
-              col. Commodo id in arcu ante lorem ipsum sed accumsan erat
-              praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo.
-              Vis aliquet tortor ultricies non ante erat nunc integer eu ante
-              ornare amet commetus vestibulum blandit integer in curae ac
-              faucibus integer non. Adipiscing cubilia elementum.
+              I am a creative and innovative E-business graduate (Cand.IT) from
+              the IT University of Copenhagen. Since 2022, I have been employed
+              as a Salesforce developer, working within a collaborative team
+              committed to delivering top-tier solutions. <br />Furthermore, my
+              professional journey spans over six years in corporate finance and
+              business consulting, giving me substantial expertise in ERP and
+              CRM systems, covering both on-premise and cloud solutions. This
+              diverse background equips me with a holistic perspective that
+              enhances my ability to navigate complex business environments and
+              deliver effective solutions.
             </p>
           </div>
         </section>
@@ -97,75 +129,61 @@
         <!-- Two -->
         <section id="two">
           <div class="container">
-            <h3>Things I Can Do</h3>
+            <h3>Skills & Languages</h3>
             <p>
-              Integer eu ante ornare amet commetus vestibulum blandit integer in
-              curae ac faucibus integer non. Adipiscing cubilia elementum
-              integer lorem ipsum dolor sit amet.
+              I previously included bar charts on my CV to represent my
+              subjective assessment of my proficiency in various software
+              development fields and programming languages. However, upon
+              reflection, I found this approach rather meaningless, as it
+              assumes a uniform point scale where all skills have the same level
+              of difficulty.<br />
+              Instead, I will categorize the programming languages I work
+              extensively with daily and those I am familiar with from previous
+              courses or studies.
             </p>
-            <ul class="feature-icons">
-              <li class="icon solid fa-code">Write all the code</li>
-              <li class="icon solid fa-cubes">Stack small boxes</li>
-              <li class="icon solid fa-book">Read books and stuff</li>
-              <li class="icon solid fa-coffee">Drink much coffee</li>
-              <li class="icon solid fa-bolt">Lightning bolt</li>
-              <li class="icon solid fa-users">Shadow clone technique</li>
-            </ul>
-          </div>
-        </section>
+            <h4>Programming Languages</h4>
 
-        <!-- Three -->
-        <section id="three">
-          <div class="container">
-            <h3>A Few Accomplishments</h3>
-            <p>
-              Integer eu ante ornare amet commetus vestibulum blandit integer in
-              curae ac faucibus integer non. Adipiscing cubilia elementum
-              integer. Integer eu ante ornare amet commetus.
-            </p>
-            <div class="features">
-              <article>
-                <a href="#" class="image"
-                  ><img src="images/pic01.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>Possibly broke spacetime</h4>
-                  <p>
-                    Integer eu ante ornare amet commetus vestibulum blandit
-                    integer in curae ac faucibus integer adipiscing ornare amet.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a href="#" class="image"
-                  ><img src="images/pic02.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>Terraformed a small moon</h4>
-                  <p>
-                    Integer eu ante ornare amet commetus vestibulum blandit
-                    integer in curae ac faucibus integer adipiscing ornare amet.
-                  </p>
-                </div>
-              </article>
-              <article>
-                <a href="#" class="image"
-                  ><img src="images/pic03.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <h4>Snapped dark matter in the wild</h4>
-                  <p>
-                    Integer eu ante ornare amet commetus vestibulum blandit
-                    integer in curae ac faucibus integer adipiscing ornare amet.
-                  </p>
-                </div>
-              </article>
+            <div class="skills-category">
+              <h5>Daily Expertise</h5>
+              <div class="skill-list">
+                <div class="skill-item">Apex</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">Git Version Control</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">SOQL/SOSL</div>
+                <div class="skill-item">LWC - Javascript, HTML, CSS</div>
+              </div>
+            </div>
+            <div class="skills-category">
+              <h5>Familiar From Studies or Past Experience</h5>
+              <div class="skill-list">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">C#</div>
+                <div class="skill-item">Swift/SwiftUI</div>
+                <div class="skill-item">Flutter/Dart</div>
+              </div>
+            </div>
+            <h4>Natural Languages</h4>
+            <div class="skills-category">
+              <h5>Fluent</h5>
+              <div class="skill-list">
+                <div class="skill-item">Danish</div>
+                <div class="skill-item">English</div>
+              </div>
+            </div>
+            <div class="skills-category">
+              <h5>Can order a cup of coffee</h5>
+              <div class="skill-list">
+                <div class="skill-item">Spanish</div>
+                <div class="skill-item">Portuguese</div>
+                <div class="skill-item">German</div>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- Four -->
-        <section id="four">
+        <!-- <section id="four">
           <div class="container">
             <h3>Contact Me</h3>
             <p>
@@ -217,41 +235,343 @@
               </div>
             </form>
           </div>
-        </section>
+        </section> -->
 
         <!-- Five -->
-        <!--
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
+        <section id="five">
+          <div class="container">
+            <section>
+              <!--Education-->
+              <header>
+                <h2 id="edu">Education</h2>
+              </header>
+              <h4 class="education"><b>IT University of Copenhagen</b></h4>
+              <h5>
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015
+              </h5>
+              <p>
+                Master of Science: Cand.IT / E-Business<br />
+                Dissertation: 10
+              </p>
+              <hr />
 
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
+              <h4><b>Copenhagen Business School</b></h4>
+              <h5>
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 - 2012
+              </h5>
+              <p>
+                Bachelor of Science: Economics and Business Administration<br />
+                Final Bachelor Project: 12
+              </p>
+              <hr />
+
+              <h4><b>University of Queensland</b></h4>
+              <h5><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011</h5>
+              <p>Exchange Student</p>
+
+              <hr />
+              <!-- Experience -->
+              <h3>Experience</h3>
+              <h5>
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2022 -
+              </h5>
+              <button type="button" class="collapsible">
+                Salesforce developer - LB Forsikring
+              </button>
+              <div class="content">
+                <p>
+                  As an in-house Salesforce developer at LB Forsikring since
+                  2022, my team and I employ the SAFe framework to consistently
+                  deliver optimal solutions to our 400+ platform users. <br />As
+                  part of working with Salesforce, I have gained a comprehensive
+                  understanding of the platform and its encompassing ecosystem.
+                  This extends to the tools of the <b>Apex</b> programming
+                  language, LWC, Flows, and Javascript, among others. <br />
+                  From Spring 2023 onward, I have been heavily involved in the
+                  implementation and enhancement of Salesforce
+                  <b>Marketing Cloud</b>, contributing to our ongoing efforts to
+                  elevate our system capabilities.
+                </p>
+              </div>
+              <br />
+              <h5>
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2022 -
+                Oct 2022
+              </h5>
+              <button type="button" class="collapsible">
+                Business Consultant - Visma Software
+              </button>
+              <div class="content">
+                <p>
+                  Visma is the leading SaaS solution provider in Europe,
+                  engaging more than 15.000 employees across Europe. In my role
+                  as Business Consultant, I help customers and qualified leads
+                  navigate in the vast field of Business Management Software.
+                  Through thorough analysis of the clients’ business processes
+                  and needs, I advise and lead them in the direction of their
+                  ideal software solutions. My area of expertise is the cloud
+                  ERP solution Visma.net, which targets the upper SMB market.
+                  Interconnected with more than 400 certified ISV products,
+                  Visma.net provides a complete cloud ERP suite, helping
+                  businesses digitalize, automate and scale.
+                </p>
+              </div>
+              <br />
+              <h5>
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2018 -
+                Feb 2022
+              </h5>
+              <button type="button" class="collapsible">
+                ERP Consultant - KeyBalance A/S
+              </button>
+              <div class="content">
+                <p>
+                  KeyBalance is a software company, which for two decades has
+                  provided an in-house developed ERP system for SMBs. A
+                  corresponding mobile and web app is provided to fit all
+                  customers' specific needs. Ongoing development through the
+                  Scrum methodology. As ERP consultant at KeyBalance I provide
+                  tailored solutions, following a Scrum methodology: - Business
+                  analysis and advisory on customers' current processes -
+                  Frontend and backend programming and deployment on all
+                  platforms - Testing and ongoing technical support
+                </p>
+              </div>
+              <br />
+              <h5>
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2017 -
+                Apr 2018
+              </h5>
+              <button type="button" class="collapsible">
+                Backpacking South America
+              </button>
+              <div class="content">
+                <p>
+                  Along with my girlfirend we decided to pull the plug and go
+                  for a five month backpacking trip to South America
+                </p>
+              </div>
+              <br />
+              <h5>
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2015 -
+                Oct 2017
+              </h5>
+              <button type="button" class="collapsible">
+                Financial Controller - VICE Media Group
+              </button>
+              <div class="content">
+                <p>
+                  VICE is a multinational media corporation spanning news
+                  editorials, TV-Channels and digital advertising agencies as
+                  well as content production departments. Employed for 2+ years
+                  as Financial Controller in the Copenhagen office with 150+
+                  employees. I was in charge of keeping track of all financial
+                  activities in the Danish office as well as supporting the
+                  other Scandinavian entities. Work involved close collaboration
+                  with our finance department (EMEA) and production and agency
+                  departments in Scandinavia.
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+        <!-- Three -->
+        <!-- <section id="three">
+          <div class="container">
+            <h3>A Few Accomplishments</h3>
+            <p>
+              Integer eu ante ornare amet commetus vestibulum blandit integer in
+              curae ac faucibus integer non. Adipiscing cubilia elementum
+              integer. Integer eu ante ornare amet commetus.
+            </p>
+            <div class="features">
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic01.jpg" alt=""
+                /></a>
+                <div class="inner">
+                  <h4>Possibly broke spacetime</h4>
+                  <p>
+                    Integer eu ante ornare amet commetus vestibulum blandit
+                    integer in curae ac faucibus integer adipiscing ornare amet.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic02.jpg" alt=""
+                /></a>
+                <div class="inner">
+                  <h4>Terraformed a small moon</h4>
+                  <p>
+                    Integer eu ante ornare amet commetus vestibulum blandit
+                    integer in curae ac faucibus integer adipiscing ornare amet.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <a href="#" class="image"
+                  ><img src="images/pic03.jpg" alt=""
+                /></a>
+                <div class="inner">
+                  <h4>Snapped dark matter in the wild</h4>
+                  <p>
+                    Integer eu ante ornare amet commetus vestibulum blandit
+                    integer in curae ac faucibus integer adipiscing ornare amet.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section> -->
+
+        <!-- Two -->
+        <section id="four">
+          <div class="container">
+            <h3>What else do I do</h3>
+
+            <ul class="feature-icons">
+              <li class="icon solid fa-code">Write all the code</li>
+              <li class="icon solid fa-book">Read books</li>
+              <li class="icon solid fa-coffee">Drink much coffee</li>
+              <li class="icon solid fa-running">Trying to stay in shape</li>
+              <li class="icon solid fa-baby">Taking care of my kids</li>
+              <li class="icon solid fa-guitar">Play music</li>
+            </ul>
+            <div class="feature-icons">
+              <p class="icon solid fa-coffee">Drink coffee:</p>
+              <div class="skill-container">
+                <div class="skill-bar animate">100%</div>
+              </div>
+              <h6>Couldn't resist making a skill bar here</h6>
+            </div>
+          </div>
+        </section>
+        <!-- Contact -->
+        <section id="six">
+          <div class="container containersix">
+            <div class="row">
+              <div class="col-6 col-12-xsmall">
+                <ul class="actions stacked">
+                  <li>
+                    <h4>Feel free to reach out</h4>
+                  </li>
+                  <li>
+                    <a
+                      href="static/CV_SimonMostroemNielsen.pdf"
+                      class="button primary"
+                      download
+                    >
+                      <i class="fa fa-download"></i> Download CV
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <ul class="actions stacked">
+                  <li>
+                    <a href="mailto:simon.mostroem@gmail.com" target="_blank"
+                      >simon.mostroem@gmail.com</a
+                    ><br />
+                    +45 22892879
+                  </li>
+                </ul>
+
+                <ul class="icons">
+                  <li>
+                    <a
+                      href="https://www.salesforce.com/trailblazer/simonmostroem"
+                      class="icon brands fa-salesforce"
+                      target="_blank"
+                      ><span class="label">Trailhead</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://linkedin.com/in/simonmostroem"
+                      class="icon brands fa-linkedin"
+                      target="_blank"
+                      ><span class="label">LinkedIn</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/SimonMostroem"
+                      class="icon brands fa-github"
+                      target="_blank"
+                      ><span class="label">Github</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="mailto:simon.mostroem@gmail.com"
+                      class="icon solid fa-envelope"
+                      target="_blank"
+                      ><span class="label">Email</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Examples -->
+
+        <!-- <section id="five">
+          <div class="container">
+            <h3>Example Elements</h3>
+
+            <section>
+              <h4>Text</h4>
+              <p>
+                This is <b>bold</b> and this is <strong>strong</strong>. This is
+                <i>italic</i> and this is <em>emphasized</em>. This is
+                <sup>superscript</sup> text and this is
+                <sub>subscript</sub> text. This is <u>underlined</u> and this is
+                code: <code>for (;;) { ... }</code>. Finally,
+                <a href="#">this is a link</a>.
+              </p>
+              <hr />
+              <header>
+                <h4>Heading with a Subtitle</h4>
+                <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+              </header>
+              <p>
+                Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida
+                odio porttitor sem non mi integer non faucibus ornare mi ut ante
+                amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
+                accumsan varius montes viverra nibh in adipiscing blandit tempus
+                accumsan.
+              </p>
+              <header>
+                <h5>Heading with a Subtitle</h5>
+                <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+              </header>
+              <p>
+                Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida
+                odio porttitor sem non mi integer non faucibus ornare mi ut ante
+                amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
+                accumsan varius montes viverra nibh in adipiscing blandit tempus
+                accumsan.
+              </p>
+              <hr />
+              <h2>Heading Level 2</h2>
+              <h3>Heading Level 3</h3>
+              <h4>Heading Level 4</h4>
+              <h5>Heading Level 5</h5>
+              <h6>Heading Level 6</h6>
+              <hr />
+              <h5>Blockquote</h5>
+              <blockquote>
+                Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt
+                felis sagittis eget tempus euismod. Vestibulum ante ipsum primis
+                in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+                volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum
+                primis in faucibus lorem ipsum dolor sit amet nullam adipiscing
+                eu felis.
+              </blockquote>
+              <h5>Preformatted</h5>
+              <pre><code>i = 0;
 
 while (!deck.isInOrder()) {
     print 'Iteration ' + i;
@@ -260,301 +580,451 @@ while (!deck.isInOrder()) {
 }
 
 print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
+            </section>
 
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
+            <section>
+              <h4>Lists</h4>
+              <div class="row">
+                <div class="col-6 col-12-xsmall">
+                  <h5>Education</h5>
+                  <ul>
+                    <li>Dolor pulvinar etiam magna etiam.</li>
+                    <li>Sagittis adipiscing lorem eleifend.</li>
+                    <li>Felis enim feugiat dolore viverra.</li>
+                  </ul>
+                  <h5>Alternate</h5>
+                  <ul class="alt">
+                    <li>Dolor pulvinar etiam magna etiam.</li>
+                    <li>Sagittis adipiscing lorem eleifend.</li>
+                    <li>Felis enim feugiat dolore viverra.</li>
+                  </ul>
+                </div>
+                <div class="col-6 col-12-xsmall">
+                  <h5>Ordered</h5>
+                  <ol>
+                    <li>Dolor pulvinar etiam magna etiam.</li>
+                    <li>Etiam vel felis at lorem sed viverra.</li>
+                    <li>Felis enim feugiat dolore viverra.</li>
+                    <li>Dolor pulvinar etiam magna etiam.</li>
+                    <li>Etiam vel felis at lorem sed viverra.</li>
+                    <li>Felis enim feugiat dolore viverra.</li>
+                  </ol>
+                  <h5>Icons</h5>
+                  <ul class="icons">
+                    <li>
+                      <a href="#" class="icon brands fa-twitter"
+                        ><span class="label">Twitter</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="icon brands fa-facebook-f"
+                        ><span class="label">Facebook</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="icon brands fa-instagram"
+                        ><span class="label">Instagram</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="icon brands fa-github"
+                        ><span class="label">Github</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="icon brands fa-dribbble"
+                        ><span class="label">Dribbble</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="icon brands fa-tumblr"
+                        ><span class="label">Tumblr</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h5>Actions</h5>
+              <ul class="actions">
+                <li><a href="#" class="button primary">Default</a></li>
+                <li><a href="#" class="button">Default</a></li>
+                <li><a href="#" class="button alt">Default</a></li>
+              </ul>
+              <ul class="actions small">
+                <li><a href="#" class="button primary small">Small</a></li>
+                <li><a href="#" class="button small">Small</a></li>
+                <li><a href="#" class="button alt small">Small</a></li>
+              </ul>
+              <div class="row">
+                <div class="col-3 col-6-medium col-12-xsmall">
+                  <ul class="actions stacked">
+                    <li><a href="#" class="button primary">Default</a></li>
+                    <li><a href="#" class="button">Default</a></li>
+                    <li><a href="#" class="button alt">Default</a></li>
+                  </ul>
+                </div>
+                <div class="col-3 col-6 col-12-xsmall">
+                  <ul class="actions stacked">
+                    <li><a href="#" class="button primary small">Small</a></li>
+                    <li><a href="#" class="button small">Small</a></li>
+                    <li><a href="#" class="button alt small">Small</a></li>
+                  </ul>
+                </div>
+                <div class="col-3 col-6-medium col-12-xsmall">
+                  <ul class="actions stacked">
+                    <li><a href="#" class="button primary fit">Default</a></li>
+                    <li><a href="#" class="button fit">Default</a></li>
+                    <li><a href="#" class="button alt fit">Default</a></li>
+                  </ul>
+                </div>
+                <div class="col-3 col-6-medium col-12-xsmall">
+                  <ul class="actions stacked">
+                    <li>
+                      <a href="#" class="button primary small fit">Small</a>
+                    </li>
+                    <li><a href="#" class="button small fit">Small</a></li>
+                    <li><a href="#" class="button alt small fit">Small</a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
 
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
+            <section>
+              <h4>Table</h4>
+              <h5>Default</h5>
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Item One</td>
+                      <td>Ante turpis integer aliquet porttitor.</td>
+                      <td>29.99</td>
+                    </tr>
+                    <tr>
+                      <td>Item Two</td>
+                      <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                      <td>19.99</td>
+                    </tr>
+                    <tr>
+                      <td>Item Three</td>
+                      <td>Morbi faucibus arcu accumsan lorem.</td>
+                      <td>29.99</td>
+                    </tr>
+                    <tr>
+                      <td>Item Four</td>
+                      <td>Vitae integer tempus condimentum.</td>
+                      <td>19.99</td>
+                    </tr>
+                    <tr>
+                      <td>Item Five</td>
+                      <td>Ante turpis integer aliquet porttitor.</td>
+                      <td>29.99</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="2"></td>
+                      <td>100.00</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
 
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
+              <h5>Alternate</h5>
+              <div class="table-wrapper">
+                <table class="alt">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Item One</td>
+                      <td>Ante turpis integer aliquet porttitor.</td>
+                      <td>29.99</td>
+                    </tr>
+                    <tr>
+                      <td>Item Two</td>
+                      <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                      <td>19.99</td>
+                    </tr>
+                    <tr>
+                      <td>Item Three</td>
+                      <td>Morbi faucibus arcu accumsan lorem.</td>
+                      <td>29.99</td>
+                    </tr>
+                    <tr>
+                      <td>Item Four</td>
+                      <td>Vitae integer tempus condimentum.</td>
+                      <td>19.99</td>
+                    </tr>
+                    <tr>
+                      <td>Item Five</td>
+                      <td>Ante turpis integer aliquet porttitor.</td>
+                      <td>29.99</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="2"></td>
+                      <td>100.00</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </section>
 
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
+            <section>
+              <h4>Buttons</h4>
+              <ul class="actions">
+                <li><a href="#" class="button primary">Primary</a></li>
+                <li><a href="#" class="button">Default</a></li>
+                <li><a href="#" class="button alt">Alternate</a></li>
+              </ul>
+              <ul class="actions">
+                <li><a href="#" class="button primary large">Large</a></li>
+                <li><a href="#" class="button">Default</a></li>
+                <li><a href="#" class="button alt small">Small</a></li>
+              </ul>
+              <ul class="actions fit">
+                <li><a href="#" class="button primary fit">Fit</a></li>
+                <li><a href="#" class="button fit">Fit</a></li>
+                <li><a href="#" class="button alt fit">Fit</a></li>
+              </ul>
+              <ul class="actions fit small">
+                <li>
+                  <a href="#" class="button primary fit small">Fit + Small</a>
+                </li>
+                <li><a href="#" class="button fit small">Fit + Small</a></li>
+                <li>
+                  <a href="#" class="button alt fit small">Fit + Small</a>
+                </li>
+              </ul>
+              <ul class="actions">
+                <li>
+                  <a href="#" class="button primary icon solid fa-download"
+                    >Icon</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="button icon solid fa-download">Icon</a>
+                </li>
+                <li>
+                  <a href="#" class="button alt icon solid fa-check">Icon</a>
+                </li>
+              </ul>
+              <ul class="actions">
+                <li><span class="button primary disabled">Primary</span></li>
+                <li><span class="button disabled">Default</span></li>
+                <li><span class="button alt disabled">Alternate</span></li>
+              </ul>
+            </section>
 
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
+            <section>
+              <h4>Form</h4>
+              <form method="post" action="#">
+                <div class="row gtr-uniform">
+                  <div class="col-6 col-12-xsmall">
+                    <input
+                      type="text"
+                      name="demo-name"
+                      id="demo-name"
+                      value=""
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="col-6 col-12-xsmall">
+                    <input
+                      type="email"
+                      name="demo-email"
+                      id="demo-email"
+                      value=""
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <select name="demo-category" id="demo-category">
+                      <option value="">- Category -</option>
+                      <option value="1">Manufacturing</option>
+                      <option value="1">Shipping</option>
+                      <option value="1">Administration</option>
+                      <option value="1">Human Resources</option>
+                    </select>
+                  </div>
+                  <div class="col-4 col-12-medium">
+                    <input
+                      type="radio"
+                      id="demo-priority-low"
+                      name="demo-priority"
+                      checked
+                    />
+                    <label for="demo-priority-low">Low Priority</label>
+                  </div>
+                  <div class="col-4 col-12-medium">
+                    <input
+                      type="radio"
+                      id="demo-priority-normal"
+                      name="demo-priority"
+                    />
+                    <label for="demo-priority-normal">Normal Priority</label>
+                  </div>
+                  <div class="col-4 col-12-medium">
+                    <input
+                      type="radio"
+                      id="demo-priority-high"
+                      name="demo-priority"
+                    />
+                    <label for="demo-priority-high">High Priority</label>
+                  </div>
+                  <div class="col-6 col-12-medium">
+                    <input type="checkbox" id="demo-copy" name="demo-copy" />
+                    <label for="demo-copy"
+                      >Email me a copy of this message</label
+                    >
+                  </div>
+                  <div class="col-6 col-12-medium">
+                    <input
+                      type="checkbox"
+                      id="demo-human"
+                      name="demo-human"
+                      checked
+                    />
+                    <label for="demo-human">I am a human and not a robot</label>
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      name="demo-message"
+                      id="demo-message"
+                      placeholder="Enter your message"
+                      rows="6"
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <ul class="actions">
+                      <li><input type="submit" value="Send Message" /></li>
+                      <li><input type="reset" value="Reset" class="alt" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            </section>
 
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
-
-								</div>
-							</section>
-						--></div>
+            <section>
+              <h4>Image</h4>
+              <h5>Fit</h5>
+              <span class="image fit"
+                ><img src="images/banner.jpg" alt=""
+              /></span>
+              <div class="box alt">
+                <div class="row gtr-50 gtr-uniform">
+                  <div class="col-4">
+                    <span class="image fit"
+                      ><img src="images/pic01.jpg" alt=""
+                    /></span>
+                  </div>
+                  <div class="col-4">
+                    <span class="image fit"
+                      ><img src="images/pic02.jpg" alt=""
+                    /></span>
+                  </div>
+                  <div class="col-4">
+                    <span class="image fit"
+                      ><img src="images/pic03.jpg" alt=""
+                    /></span>
+                  </div>
+                  <div class="col-4">
+                    <span class="image fit"
+                      ><img src="images/pic02.jpg" alt=""
+                    /></span>
+                  </div>
+                  <div class="col-4">
+                    <span class="image fit"
+                      ><img src="images/pic03.jpg" alt=""
+                    /></span>
+                  </div>
+                  <div class="col-4">
+                    <span class="image fit"
+                      ><img src="images/pic01.jpg" alt=""
+                    /></span>
+                  </div>
+                  <div class="col-4">
+                    <span class="image fit"
+                      ><img src="images/pic03.jpg" alt=""
+                    /></span>
+                  </div>
+                  <div class="col-4">
+                    <span class="image fit"
+                      ><img src="images/pic01.jpg" alt=""
+                    /></span>
+                  </div>
+                  <div class="col-4">
+                    <span class="image fit"
+                      ><img src="images/pic02.jpg" alt=""
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <h5>Left &amp; Right</h5>
+              <p>
+                <span class="image left"
+                  ><img src="images/avatar.jpg" alt="" /></span
+                >Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt
+                felis sagittis eget. tempus euismod. Vestibulum ante ipsum
+                primis in faucibus vestibulum. Blandit adipiscing eu felis
+                iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac
+                pellentesque praesent tincidunt felis sagittis eget. tempus
+                euismod. Vestibulum ante ipsum primis in faucibus vestibulum.
+                Blandit adipiscing eu felis iaculis volutpat ac adipiscing
+                accumsan eu faucibus. Integer ac pellentesque praesent. Donec
+                accumsan interdum nisi, quis tincidunt felis sagittis eget.
+                tempus euismod. Vestibulum ante ipsum primis in faucibus
+                vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
+                adipiscing accumsan eu faucibus. Integer ac pellentesque
+                praesent tincidunt felis sagittis eget. tempus euismod.
+                Vestibulum ante ipsum primis in faucibus vestibulum. Blandit
+                adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
+                faucibus. Integer ac pellentesque praesent.
+              </p>
+              <p>
+                <span class="image right"
+                  ><img src="images/avatar.jpg" alt="" /></span
+                >Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt
+                felis sagittis eget. tempus euismod. Vestibulum ante ipsum
+                primis in faucibus vestibulum. Blandit adipiscing eu felis
+                iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac
+                pellentesque praesent tincidunt felis sagittis eget. tempus
+                euismod. Vestibulum ante ipsum primis in faucibus vestibulum.
+                Blandit adipiscing eu felis iaculis volutpat ac adipiscing
+                accumsan eu faucibus. Integer ac pellentesque praesent. Donec
+                accumsan interdum nisi, quis tincidunt felis sagittis eget.
+                tempus euismod. Vestibulum ante ipsum primis in faucibus
+                vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
+                adipiscing accumsan eu faucibus. Integer ac pellentesque
+                praesent tincidunt felis sagittis eget. tempus euismod.
+                Vestibulum ante ipsum primis in faucibus vestibulum. Blandit
+                adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
+                faucibus. Integer ac pellentesque praesent.
+              </p>
+            </section>
+          </div>
+        </section> -->
+      </div>
 
       <!-- Footer -->
       <section id="footer">
         <div class="container">
           <ul class="copyright">
-            <li>&copy; Untitled. All rights reserved.</li>
+            <li>&copy; Simon Mostrøm Nielsen.</li>
             <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
           </ul>
         </div>

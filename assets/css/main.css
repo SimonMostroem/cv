@@ -6,7 +6,142 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+#six, #six h4 {
+	background: #989898;
+	color: white;
+}
+.scroll-watcher {
+	height: 10px;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	background-color: #4acaa8;
+	width: 100%;
+	scale: 0 1;
+	transform-origin: left;
+	animation: scroll-watcher linear;
+	animation-timeline: scroll();
+}
+section > div {
+animation: fade-out linear;
+animation-timeline: view();
+animation-range: exit 150px;
+}
+@keyframes scroll-watcher {
+	to { scale: 1 1;}
+}
+@keyframes fade-out {
+	to { opacity: 0;}
+}
+.skill-container {
+	width: 100%;       /* Full width container */
+	background-color: #f3f3f3; /* Light grey background */
+	border-radius: 10px;
+	margin: 20px 0;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
 
+  .skill-bar {
+	height: 30px;         /* Height of the bar */
+	line-height: 30px;    /* Center text vertically */
+	color: white;         /* Text color */
+	text-align: center;   /* Center text horizontally */
+	background-color: #4acaa8; /* Green color for the bar */
+	border-radius: 10px 0 0 10px;
+	
+  }
+
+  .skill-bar.in-view {
+	animation: skillbar 2s linear forwards;
+  }
+
+  @keyframes skillbar {
+	100% {width: 100%;}
+  }
+
+  .skill-label {
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+  }
+  .skills-section {
+	margin-bottom: 30px;
+}
+
+.skills-section h2 {
+	color: #333;
+	border-bottom: 2px solid #007BFF;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.skills-category {
+	margin-bottom: 20px;
+}
+
+.skills-category h3 {
+	margin-bottom: 5px;
+	color: #555;
+}
+
+.skill-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.skill-item {
+	background-color: #4acaa8;
+	color: white;
+	padding: 8px 15px;
+	border-radius: 20px;
+	font-size: 14px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:hover {
+	background-color: #5ed0b1;
+
+}
+
+  .collapsible {
+	background-color: #4acaa8;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	
+  }
+
+  .collapsible:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: #4acaa8;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .collapsible.active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+  
+  .active, .collapsible:hover {
+	background-color: #5ed0b1;
+  }
+  
+  .content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+  
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2373,12 +2508,12 @@ input, select, textarea {
 
 /* Feature Icons */
 
-	ul.feature-icons {
+	ul.feature-icons, div.feature-icons {
 		list-style: none;
 		padding-left: 0;
 	}
 
-		ul.feature-icons li {
+		ul.feature-icons li, div.feature-icons p {
 			text-decoration: none;
 			display: inline-block;
 			margin: 0 0 1.6875em 0;
@@ -2388,7 +2523,7 @@ input, select, textarea {
 			width: 48%;
 		}
 
-			ul.feature-icons li:before {
+			/* ul.feature-icons li:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
 				display: inline-block;
@@ -2399,9 +2534,9 @@ input, select, textarea {
 				text-transform: none !important;
 				font-family: 'Font Awesome 5 Free';
 				font-weight: 400;
-			}
+			} */
 
-			ul.feature-icons li:before {
+			ul.feature-icons li:before, div.feature-icons p:before {
 				background: #4acaa8;
 				border-radius: 100%;
 				color: #ffffff;
@@ -2780,18 +2915,25 @@ input, select, textarea {
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
+			/* overflow-y: auto;  */
+
 		}
 
 			#header > nav ul {
 				list-style: none;
 				margin: 0;
 				padding: 0;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
 			}
 
 				#header > nav ul li {
 					border-top: solid 2px #5ccfb1;
 					display: block;
+					flex: 1;
 					padding: 0;
+					
 				}
 
 					#header > nav ul li a {
@@ -2802,9 +2944,11 @@ input, select, textarea {
 						border: 0;
 						color: #ffffff !important;
 						display: block;
-						padding: 0.85em 0;
+						/* padding: 0.85em 0; */
 						text-decoration: none;
+						height: 100%;
 					}
+					
 
 						#header > nav ul li a.active {
 							background: #fff;
