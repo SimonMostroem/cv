@@ -47,15 +47,18 @@ animation-range: exit 150px;
 	line-height: 30px;    /* Center text vertically */
 	color: white;         /* Text color */
 	text-align: center;   /* Center text horizontally */
-	/* background-color: #42538a; Green color for the bar */
+	 background-color: #986c43; 
+	 width: 0%;
+	/*Green color for the bar */
 	/* 4acaa8 - original bg color */
-	 background-color: #986c43;
+	 /* background-color: #986c43; */
 	border-radius: 10px 0 0 10px;
 	
   }
 
   .skill-bar.in-view {
 	animation: skillbar 2s linear forwards;
+
   }
 
   @keyframes skillbar {
